@@ -32,17 +32,34 @@ public class SimpleTest {
 		int x = simple.printNumber();
 		assertEquals(8, x);
 	}
+	@Test
+	public void displayHiddenNumber() {
+		int x = simple.printNumber();
+		assertNotEquals(9, x);
+	}
 
 	@Test
 	public void addTwoNumbersTest() {
 		int x = simple.addTwoNumbers(2, 3);
 		assertEquals(5, x);
 	}
+	
+	@Test
+	public void addTwoNumbersTest() {
+		int x = simple.addTwoNumbers(2, 3);
+		assertNotEquals(7, x);
+	}
 
 	@Test
 	public void subtractTwoNumbersTest() {
 		int x = simple.subtractTwoNumbers(10, 7);
 		assertEquals(3, x);
+	}
+	
+	@Test
+	public void addTwoNumbersTest() {
+		int x = simple.addTwoNumbers(2, 3);
+		assertNotEquals(10, x);
 	}
 
 }
